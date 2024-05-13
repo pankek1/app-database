@@ -195,8 +195,8 @@ INSERT INTO `portfolio_tbl` (`portfolioID`, `projectTitle`, `projectDesc`, `proj
 --
 
 CREATE TABLE `profile_pic` (
-  `pfpid` int(11) NOT NULL,
-  `userid` varchar(255) NOT NULL,
+  `pfp_id` int(11) NOT NULL,
+  `user_id` varchar(255) NOT NULL,
   `picture` mediumblob DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
