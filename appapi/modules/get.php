@@ -77,7 +77,7 @@ class Get extends GlobalMethods{
         if($param != null){
             $condition = "id = $param";
         }
-        return $this->get_records("products_tbl", $condition);
+        return $this->get_records("portfolio_tbl", $condition);
     }
 
     public function get_orders($param){
