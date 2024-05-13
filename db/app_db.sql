@@ -262,8 +262,8 @@ ALTER TABLE `portfolio_tbl`
 -- Indexes for table `profile_pic`
 --
 ALTER TABLE `profile_pic`
-  ADD PRIMARY KEY (`pfpid`),
-  ADD KEY `userid` (`userid`);
+  ADD PRIMARY KEY (`pfp_id`),
+  ADD KEY `userid` (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -315,7 +315,7 @@ ALTER TABLE `portfolio_tbl`
 -- AUTO_INCREMENT for table `profile_pic`
 --
 ALTER TABLE `profile_pic`
-  MODIFY `pfpid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pfp_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
@@ -361,7 +361,7 @@ ALTER TABLE `personal_info`
 -- Constraints for table `profile_pic`
 --
 ALTER TABLE `profile_pic`
-  ADD CONSTRAINT `profile_pic_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `account` (`user_id`);
+  ADD CONSTRAINT `profile_pic_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `account` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
